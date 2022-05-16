@@ -1,0 +1,25 @@
+
+public class Generics {
+	public static void main(String[] args) {
+
+		
+	}
+}
+
+class Apple{
+	@Override
+	public String toString() {
+		return "apple";
+	}
+}
+class Orange{
+	@Override
+	public String toString() {
+		return "orange";
+	}
+}
+
+class AppleBox{
+	private Apple ap;
+	
+}

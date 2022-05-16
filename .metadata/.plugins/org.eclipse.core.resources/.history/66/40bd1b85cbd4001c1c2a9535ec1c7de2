@@ -1,0 +1,61 @@
+public class Generics2 {
+	public static void main(String[] args) {
+
+		Box aBox2 = new Box();
+		Box oBox2 = new Box();
+		
+		aBox2.setOb(new Apple2());
+		oBox2.setOb(new Orange2());
+		
+		Apple2 ap = (Apple2)aBox2.getOb();
+		System.out.println(ap);
+		
+		Orange2 or =(Orange2)oBox2.getOb(); //오브젝 타입으로 형변환 해줌 자손-> 부모 
+		System.out.println(or);
+		
+		AppleBox2 ap2 = new AppleBox2();
+		ap2.setApple(new Apple2());
+
+		aBox2.setOb("new Apple()"); //string 타입 
+		oBox2.setOb("orange");
+		
+		Apple2 ap4 = (Apple2)aBox2.getOb(); // 가져올 때 문제점, string타입이 아니라서 불러오기 실패함. 
+	}
+}
+
+class AppleBox2{
+	Apple2 apple;
+
+	public Apple2 getApple() {
+		return apple;
+	}
+
+	public void setApple(Apple2 apple) {
+		this.apple = apple;
+	}
+	
+}
+class Box2{
+	private Object ob;
+
+	public Object getOb() {
+		return ob;
+	}
+	public void setOb(Object ob) { 
+		this.ob = ob;
+	}
+}
+
+class Apple2{
+	@Override
+	public String toString() {
+		return "I am apple";
+	}
+}
+class Orange2{
+	@Override
+	public String toString() {
+		return "I am orange";
+	}
+}
+

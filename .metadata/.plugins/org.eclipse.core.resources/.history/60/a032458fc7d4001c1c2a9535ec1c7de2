@@ -1,0 +1,34 @@
+public class Generics {
+	public static void main(String[] args) {
+
+		Box aBox = new Box();
+		
+	}
+}
+
+class Box{
+	private Object ob;
+
+	public Object getOb() {
+		return ob;
+	}
+
+	public void setOb(Object ob) {
+		this.ob = ob;
+	}
+	
+}
+
+class Apple{
+	@Override
+	public String toString() {
+		return "apple";
+	}
+}
+class Orange{
+	@Override
+	public String toString() {
+		return "orange";
+	}
+}
+
