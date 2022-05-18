@@ -1,3 +1,17 @@
+
+
+select *
+from LOCATIONS
+where STREET_ADDRESS Like '%St';
+
+select *
+from LOCATIONS
+where city Like 'South____';
+
+select *
+from LOCATIONS
+where city Like 'South%'; -- 검색시 작은 따옴표 사용하고 대소문자 구별해야함 
+
 /*
 Like 연산자 >> 문자열 속성에서 부분적으로 일치히나느 데이터만 출력 할 때 사용
 % >> 0개 이상의 문자(문자의 내용과 객수는 상관 없음)
