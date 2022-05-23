@@ -49,4 +49,6 @@
     <fullyQualifiedTypeName name="java.util.function.IntConsumer"/>
     <fullyQualifiedTypeName name="java.util.function.IntUnaryOperator"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEWARRAY"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>
