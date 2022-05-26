@@ -5,6 +5,7 @@ department_id와 일치하는 (in) employees테이블의
 */
 
 desc employees;
+desc DEPARTMENTS;
 
 select first_name, last_name, job_id, salary
 from employees
@@ -70,11 +71,36 @@ insert into COUNTRIES(COUNTRY_ID, COUNTRY_NAME)
 values ('KM', 'South Korea');
 
 commit;
-
+select * from COUN
 update countries
 set COUNTRY_NAME = 'South Korea'
 where COUNTRY_ID = 'KR';
 
 update countries
 set COUNTRY_NAME = 'North Korea'
-where COUNTRY_ID = 'KP';
+where COUNTRY_ID = 'KR';
+
+select *
+from jobs
+where job_id = 'IT_PROG';
+
+
+update jobs
+set MIN_SALARY = 00000, MAX_SALARY=20000
+where job_id = 'IT_PROG';
+
+select * from countries;
+
+DELETE 
+from countries
+where coutry_id='KM';
+
+select * from countries
+order by COUNTRY_ID;
+
+insert into COUNTRIES(COUNTRY_ID, COUNTRY_NAME, region_id)
+values ('TR', 'Turkey', 4);
+
+update COUNTRIES
+set region_id = region_id + 10
+where country_NAME = 'Austria';
