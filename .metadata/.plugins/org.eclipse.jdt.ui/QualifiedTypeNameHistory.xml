@@ -51,4 +51,6 @@
     <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEWARRAY"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Attribute.Layout.Element"/>
+    <fullyQualifiedTypeName name="javax.swing.text.Document"/>
 </qualifiedTypeNameHistroy>
