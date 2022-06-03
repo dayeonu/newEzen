@@ -17,17 +17,16 @@ import com.saeyan.dto.MemberVO;
 @WebServlet("/login.do")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("member/login.jsp");
-		dispatcher.forward(request, response);
 
-		String url = "member/login.jsp";
+		String url = "member/login.jsp"; // member폴더 안의 login.jsp
 		
 		HttpSession session = request.getSession();
-		if(session.getAttribute("loginUser") != null) { //이미 로그인 된 사용자이면 
+		if(session.getAttribute("loginUser") != null) {
 			url="main.jsp"; // 메인페이지 이동한다. 
 		}
+		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+		dispatcher.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

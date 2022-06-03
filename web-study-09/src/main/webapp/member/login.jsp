@@ -10,20 +10,16 @@
 </head>
 <body>
 	<h2>로그인</h2>
-	<form action="/web-study-09/login.do" method="post" name="frm">
+	<form action="/login.do" method="post" name="frm">
 		<table>
 			<tr>
 				<td>아이디</td>
-				<%-- <td><input type="text" name="userid" value="${userid}"></td> --%>
-				<td>
-					<input type="text" name="userid" value="somi">
-				</td>
+				<td><input type="text" name="userid" value="${userid}"></td>
 			</tr>
 			<tr>
 				<td>암 호</td>
 				<td>
-		<!-- 	<input type="password" name="pwd"> -->
-			<input type="password" name="pwd" value="1234">
+			<input type="password" name="pwd">
 				</td>
 			</tr>
 			<tr>
@@ -32,8 +28,7 @@
 					&nbsp;&nbsp;
 					<input type="reset" value="취소">
 					&nbsp;&nbsp;
-					<input type="button" value="회원 가입"
-						onclick="location.href='join.do'"
+					<input type="button" value="회원 가입" onclick="location.href='join.do'"
 					>
 				</td>
 			</tr>
