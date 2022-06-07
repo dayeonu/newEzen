@@ -38,7 +38,7 @@ public class SeoulMain {
 
 		DataDAO dao = new DataDAO();
 
-		try+++
+		try
 
 		{
 

@@ -64,6 +64,13 @@ class Sedan extends Car {
 		setTire(4);
 		setSeat(2);
 	} 
+	@Override
+	public String toString() {
+		return "Sedan [color=" + color + "]";
+	}
+	public String getPassenger() {
+		return null;
+	}
 	public Sedan(String color, int passenger, int tire, int seat) {
 		super(passenger, tire, seat);  //상위클래스 생성자에게 전달....Car생성자에게 전달
 		System.out.println("Sedan()생성자");

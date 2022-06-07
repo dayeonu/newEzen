@@ -15,7 +15,7 @@ public class CousumerEx1 {
 	
 				// String타입과 일치해야함 , i는 int형이어야 함. 
 	ObjIntConsumer<String> c2 = (s,   i) -> System.out.println(i+ ", " + s);
-	ObjDoubleConsumer<String> c3 = (s,   i) -> System.out.println(d + ", " + s);
+	ObjDoubleConsumer<String> c3 = (s,   i) -> System.out.println(i + ", " + s);
 	
 	int n = 1;
 	Double d = 1.0;
