@@ -2,11 +2,14 @@ package com.ezen.ex01;
 
 public class Ex01 {
 	
+	private static final int CARD_NUM = 0;
+
 	void shuffle() {
 		for(int x=0; x< CARD_NUM *2; x++) {
 			int i = (int)(Math.random() * CARD_NUM);
 			int j = (int)(Math.random() * CARD_NUM);
 		
+			SutdaCard[] cards = null;
 			SutdaCard tmp = cards[i];
 			cards[i] = cards[j];
 			cards[j] = tmp;

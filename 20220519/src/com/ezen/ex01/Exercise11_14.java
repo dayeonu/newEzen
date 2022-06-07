@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-import com.ezen.ex02.Student;
 class Exercise11_14
 {
    static ArrayList record = new ArrayList(); // 성적데이터를 저장할 공간
