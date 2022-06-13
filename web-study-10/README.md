@@ -1,6 +1,6 @@
 WEB-STUDY-10
 
-환경
+사용 환경
 0. WINDOWS OS
 1. STS tool(Version: 3.9.17.RELEASE)
 2. Oracle 11g
@@ -11,6 +11,17 @@ WEB-STUDY-10
 7. ojbdc5.jar
 8. standard.jar
 9. cos.jar(version:cos-22.05.zip)
+10. lombok-1.18.24.jar
+
+--DBCP--
+<Resource name="jdbc/myoracle" auth="Container"
+  type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
+  url="jdbc:oracle:thin:@127.0.0.1:1521:XE"
+  username="scott" password="tiger" maxTotal="20" maxIdle="10"
+  maxWaitMillis="-1"/>
+			              
+			              
+			              
 
 MYSQL테이블 생성 및 데이타 입력
 create table product(
