@@ -39,7 +39,7 @@
 							</tr>
 							<tr>
 								<th>사진</th>
-								<td><input type="file" name="picturel"><br>
+								<td><input type="file" name="pictureUrl"><br>
 									(주의 사항: 이미지를변경하고자 할때만 선택하시오)</td>
 							</tr>
 							<tr>

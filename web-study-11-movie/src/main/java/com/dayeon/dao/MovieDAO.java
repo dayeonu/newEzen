@@ -18,12 +18,11 @@ public class MovieDAO {
 	public static MovieDAO getInstance() {
 		return instance;
 	}
-
 	
-	public List<MovieVO> selectALLMovies(){
+	public List<MovieVO> selectALLMovie(){
 		String sql = "select * from movie order by code desc";
 		List<MovieVO> list = new ArrayList<MovieVO>();
-		
+
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -33,10 +32,13 @@ public class MovieDAO {
 			rs = pstmt.executeQuery();
 			while(rs.next()){
 				MovieVO mVo = new MovieVO();
+				mVo.setCode(rs.getInt("code"));
 				mVo.setTitle(rs.getString("title"));
+				mVo.setPrice(rs.getInt("price"));
 				mVo.setDirector(rs.getString("director"));
 				mVo.setActor(rs.getString("actor"));
-				mVo.setPrice(rs.getInt("price"));
+				mVo.setPoster(rs.getString("poster"));
+				mVo.setSynopsis(rs.getString("synopsis"));
 				list.add(mVo);
 			}//while 문의 끝 
 			}catch(Exception e) {
@@ -48,7 +50,7 @@ public class MovieDAO {
 	} //selectALLMovies() 문의 끝 
 
 	public void insertMovie(MovieVO mVo) {
-		String sql ="insert into movie values(movie_seq.nextval, ?, ?, ?, ?, ?, ?)";
+		String sql ="insert into movie values(?, ?, ?, ?, ?, ?)";
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		try {
@@ -67,8 +69,35 @@ public class MovieDAO {
 			DBManager.closeConnection(conn, pstmt);
 		}
 	}
-}
-
 	public MovieVO selectMovieByCode(String code) {
-		String sql = "";
-	}
+		String sql = "select * from movie where code=?";
+		MovieVO mVo = null;
+		try {
+			Connection conn = null;
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				conn = DBManager.getConnetion();
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, code);
+				rs = pstmt.executeQuery();
+				if(rs.next()) {
+					mVo = new MovieVO();
+					mVo.setCode(rs.getInt("code"));
+					mVo.setTitle(rs.getString("title"));
+					mVo.setPrice(rs.getInt("price"));
+					mVo.setDirector(rs.getString("director"));
+					mVo.setActor(rs.getString("actor"));
+					mVo.setPoster(rs.getString("poster"));
+					mVo.setSynopsis(rs.getString("synopsis"));
+				}
+			}catch(Exception e) {
+				e.printStackTrace();
+			}finally {
+				DBManager.closeConnection(conn, pstmt, rs);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		} return mVo;
+	} 
+}

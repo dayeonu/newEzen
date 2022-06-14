@@ -1,5 +1,6 @@
 package com.saeyan.dto;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -13,9 +14,7 @@ import lombok.ToString;
     description varchar(1000),
     primary key(code)
  */
-@Getter
-@Setter
-@ToString
+@Data
 public class ProductVO {
 
 	private Integer code;

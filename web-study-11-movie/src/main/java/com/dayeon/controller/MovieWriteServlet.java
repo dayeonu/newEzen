@@ -53,8 +53,8 @@ public class MovieWriteServlet extends HttpServlet {
 		mVo.setSynopsis(synopsis);
 		mVo.setPoster(poster);
 		
-		MovieDAO mMdo = MovieDAO.getInstance();
-		mMdo.insertMovie(mVo);
+		MovieDAO mDao = MovieDAO.getInstance();
+		mDao.insertMovie(mVo);
 		
 		response.sendRedirect("movieList.do");
 	}

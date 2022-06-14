@@ -21,7 +21,7 @@ String sql="select * from movie";
 <title>Insert title here</title>
 </head>
 <body>
-	<div id="wrap" >
+	<div id="wrap" align="center">
 		<h1>리스트</h1>
 		<!-- 가운데 정렬이 안되고 있음 -->
 		<table class="list">
@@ -44,9 +44,9 @@ String sql="select * from movie";
 						<td>${movie.director}</td>
 						<td>${movie.actor}</td>
 						<td>${movie.price} 원</td>
-						<td><a href="movieUpdate.do?title=${movie.title}">정보 수정</a>
+						<td><a href="movieUpdate.do?code=${movie.code}">정보 수정</a>
 						</td>
-						<td><a href="movieDelete.do?title=${movie.title}">정보 삭제</a>
+						<td><a href="movieDelete.do?code=${movie.code}">정보 삭제</a>
 						</td>
 						</tr>
 				</c:forEach>

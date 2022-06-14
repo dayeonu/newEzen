@@ -13,4 +13,10 @@ public class MovieVO {
 	private String actor;
 	private String poster;
 	private String synopsis;
+	@Override
+	public String toString() {
+		return "MovieVO [code=" + code + ", title=" + title + ", price=" + price + ", director=" + director + ", actor="
+				+ actor + ", poster=" + poster + ", synopsis=" + synopsis + "]";
+	}
+	
 }

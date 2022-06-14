@@ -21,7 +21,7 @@ public class MovieListServelet extends HttpServlet {
 	
 		MovieDAO mDao = MovieDAO.getInstance();
 		
-		List<MovieVO> movieList = mDao.selectALLMovies();
+		List<MovieVO> movieList = mDao.selectALLMovie();
 		request.setAttribute("movieList", movieList);
 	
 		RequestDispatcher dispatcher = request.getRequestDispatcher("movie/movieList.jsp");

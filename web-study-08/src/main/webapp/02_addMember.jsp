@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*" %>
+	pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
 <%! 
 	Connection conn = null;
 	PreparedStatement pstmt = null;
@@ -9,7 +9,7 @@
 	String uid = "scott";
 	String pass = "tiger";
 
-	String sql = "insert into member values(?,?,?,?,?,?)";
+	String sql = "insert into member values(?,?,?,?,?,?)"; //prepareStatement객체를 사용할때 sql문은 ? 기호를 사용한다.
 %>
 <!DOCTYPE html>
 <html>
@@ -18,7 +18,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
+	<%
 	request.setCharacterEncoding("utf-8");
 
 String name = request.getParameter("name");
@@ -43,6 +43,7 @@ try{
 	pstmt.setInt(6,Integer.parseInt(admin));
 	//5. sql문을 실행하여 결과 처리
 	pstmt.executeUpdate();
+	pstmt.close();
 } catch(Exception e){
 	e.printStackTrace();
 } finally {
@@ -55,8 +56,8 @@ try{
 	}
 } //finally의 끝 
 %>
-<h3>회원 가입 성공 </h3>
-<a href = "01_allMember.jsp"> 회원 전체 목록 보기</a>
+	<h3>회원 가입 성공</h3>
+	<a href="01_allMember.jsp"> 회원 전체 목록 보기</a>
 </body>
 
 </html>

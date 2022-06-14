@@ -14,11 +14,13 @@
 	if(strpage == null){
 		strpage = "1";
 	}
+	//숫자로 사용자에게 입력받게 됨 curpage에 저장됨 
 	int curpage = Integer.parseInt(strpage);
 	
 //2. 데이터베이스에서 데이터 받아오기
 	List<BoardVO> list = dao.boardListData(curpage);
 	int totalPage = dao.boardTotalPage();
+	
 //3. 페이지 표시(페이징)
 	int Block = 5;
 		//시작번호 = (현재페이지 - 1) * 페이지당 게시물수 + 1

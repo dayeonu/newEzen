@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*" %>
+	pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
 <%! 
 	Connection conn = null;
 	PreparedStatement pstmt = null;
@@ -15,23 +15,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
-<table border='1' class="table">
- <thead>
-      <tr>
-        <th>name</th>
-        <th>address</th>
-        <th>ssn</th>
-      </tr>
-    </thead>
+	<table border='1' class="table">
+		<thead>
+			<tr>
+				<th>name</th>
+				<th>address</th>
+				<th>ssn</th>
+			</tr>
+		</thead>
 
-<%
+		<%
 try{
 	//1. jdbc 드라이버 로드
 	Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -44,14 +48,14 @@ try{
 	//5. sql문을 실행하여 결과 처리
 	while(rs.next()){
 %>
-<tbody>
-    <tr class="table-primary">
-    <td> <%=rs.getString(1) %></td>
-    <td> <%=rs.getString(2) %></td>
-    <td> <%=rs.getString(3) %></td>
-    </tr>
-    </tbody>      
-    <%
+		<tbody>
+			<tr class="table-primary">
+				<td><%=rs.getString(1) %></td>
+				<td><%=rs.getString(2) %></td>
+				<td><%=rs.getString(3) %></td>
+			</tr>
+		</tbody>
+		<%
 		
 	}
 	
@@ -68,7 +72,7 @@ try{
 	}
 } //finally의 끝 
 %>
-</table>
+	</table>
 
 </body>
 </html>

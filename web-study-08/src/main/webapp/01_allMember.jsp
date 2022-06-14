@@ -35,6 +35,7 @@ try{
 	//2. 연결
 	conn = DriverManager.getConnection(url,uid,pass);
 	//3. sql문장 작성 
+	//createStatement()데이터베이스로 SQL 문을 보내기 위한 SQLServerStatement 개체를 만듭니다.
 	stmt = conn.createStatement();
 	//4. sql문장 실행
 	rs = stmt.executeQuery(sql);

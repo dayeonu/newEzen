@@ -12,9 +12,8 @@
 <link rel="stylesheet" type="text/css" href="css/shopping.css">
 </head>
 <body>
-	<div id="wrap">
+	<div id="wrap" align="center">
 		<form method="post" enctype="multipart/form-data" name="frm">
-				<td>
 			<table>
 				<tr>
 					<th>제 목</th>
@@ -41,7 +40,6 @@
 					<td><input type="file" name="pictureurl"></td>
 				</tr>
 			</table>
-			</td>
 		<br>
 		<input type="submit" value="확인" onclick="return movieCheck()">
 		<input type="reset" value="취소" >

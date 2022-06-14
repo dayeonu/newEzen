@@ -1,7 +1,10 @@
 package com.saeyan.dao;
 
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.saeyan.dto.ProductVO;
 
@@ -28,22 +31,20 @@ public class ProductDAO {
 			pstmt=conn.prepareStatement(sql);
 			rs=pstmt.executeQuery();
 			while(rs.next()) {
-				ProductVO vo = new ProductVO();
-				vo.setCode(rs.getInt(1));
-				vo.setName(rs.getString(2));
-				vo.setPrice(rs.getInt(3));
-				vo.setPictureUrl(rs.getString(4));
-				vo.setDescription(rs.getString(5));
-				list.add(vo);
+				ProductVO pVo = new ProductVO();
+				pVo.setCode(rs.getInt("code"));
+				pVo.setName(rs.getString("name"));
+				pVo.setPrice(rs.getInt("price"));
+				pVo.setPictureUrl(rs.getString("pictureUrl"));
+				pVo.setDescription(rs.getString("description"));
+				list.add(pVo);
 			}
-			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}finally {
 			DBManager.closeConnection(conn, pstmt, rs);
 		}
 		return list;
-		
 	}
 	
 	public int insertProduct(ProductVO pVo) {
