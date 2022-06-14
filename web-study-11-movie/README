@@ -1,0 +1,50 @@
+ 1. 테이블 만들기 ( movie )
+	-- 영화 관리 프로그램 --
+	 create table movie(
+	 code number(4), -- 영화코드
+	 title varchar2(50), -- 영화제목
+	 price number(10), --가격
+	 director varchar2(20), -- 감독
+	 actor varchar2(20), -- 영화배우
+	 poster varchar2(100), -- 포스터
+	 synopsis varchar2(3000), --설명 
+	 primary key (code)
+	 );
+	-- 데이타 삽입 --
+	insert into movie values('1','베를린','10000','류승완','하정우','movie1.jpg','거대한 국제적 음모가 숨겨진 운명의 도시 베를린..');
+ 	insert into movie values('2','박수건달','10000','조진규','박신양,엄지원','movie2.jpg','건달로 사느냐, 무당으로 사느냐 그것이 문제..');
+ 	insert into movie values('3','레미제라블','10000','톰 후퍼','휴 잭맨','movie3.jpg','빵 한조각을 훔친 죄로 19년의 감옥살이를 한...');
+ 	insert into movie values('4','7번방의 선물','9000','이환경','류승룡,갈소원','movie4.jpg','최악의 흉악범들이 모인 교도소 7번방에 이상한..');
+ 	
+
+ 2. 영화 정보 리스트	(WebContent/movie)
+ 	-- 영화 정보 리스트 페이지	(movielist.jsp)		: 정보 리스트
+ 	-- 영화 정보 등록 페이지	(movieWrite.jsp)	: 등록 페이지
+	-- 영화 정보 수정 페이지	(movieUpdate.jsp)	: 수정 페이지
+	-- 영화 정보 삭제 페이지	(movieDelete.jsp)	: 삭제 페이지 
+	
+		
+ 3. 서블릿 파일 (src/com/dayeon/controller)
+ 	-- MovieListServlet.java	-- movieList.do
+ 	-- MovieWriteServlet.java	-- movieWrite.do
+ 	-- MovieUpdateServlet.java	-- movieUpdate.do
+ 	-- MovieDeleteServlet.java	-- movieDelete.do					
+ 	
+  4. 자바 스크립트 파일 (WebContent/script)
+  
+  5. VO 클래스 (src/com/dayeon/dto)
+  	-- MovieVO.java				-- 영화 정보를 저장하는 클래스
+  
+  6. DAO 클래스 (src/com/dayeon/dao)
+  	-- MovieDAO.java			-- 데이터 베이스 테이블과 연동해서 작업하는 데이터베이스 처리클래스 
+  	[리턴형]							[메소드]
+  	MovieDAO getInstance()			MovieDAO객체를 리턴한다
+  	List<MovieVO> selectALLMovies() 최근 등록한 영화정보를 먼저 출력한다
+  	void insertMovie(MovieVO mVo)	전달인자로 받은 VO객체를 Movie테이블에 삽입한다.
+  	
+  	
+  	
+  	
+  	
+  	
+  	

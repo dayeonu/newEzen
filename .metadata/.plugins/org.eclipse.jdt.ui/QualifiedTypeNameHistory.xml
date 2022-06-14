@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sun.net.www.content.text.plain"/>
-    <fullyQualifiedTypeName name="com.ezen.ex06.ThreadEx1"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="com.ezen.ex01.Outer.Nested1"/>
-    <fullyQualifiedTypeName name="com.ezen.ex01.Outer.Member"/>
-    <fullyQualifiedTypeName name="com.ezen.ex01.Printable"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.lang.Void"/>
     <fullyQualifiedTypeName name="com.ezen.ex06.Calculate"/>
@@ -26,7 +19,6 @@
     <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Attribute.Layout.Element"/>
     <fullyQualifiedTypeName name="javax.swing.text.Document"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="com.saeyan.controller.MemberUpdateServlet"/>
@@ -38,26 +30,34 @@
     <fullyQualifiedTypeName name="com.it.dao.BoardDAO"/>
     <fullyQualifiedTypeName name="com.it.dao.BoardVO"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="lombok.ToString"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="com.sun.tools.classfile.DefaultAttribute"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.saeyan.dao.ProductDAO"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.connector.Response"/>
+    <fullyQualifiedTypeName name="com.saeyan.dto.ProductVO"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
-    <fullyQualifiedTypeName name="lombok.ToString"/>
     <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
-    <fullyQualifiedTypeName name="javax.naming.Context"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="sun.security.util.PropertyExpander.ExpandException"/>
+    <fullyQualifiedTypeName name="javax.swing.text.AbstractDocument.Content"/>
+    <fullyQualifiedTypeName name="jdk.javadoc.internal.doclets.toolkit.Content"/>
+    <fullyQualifiedTypeName name="javax.naming.Context"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
-    <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
-    <fullyQualifiedTypeName name="com.saeyan.dao.ProductDAO"/>
-    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="javax.security.auth.message.callback.PrivateKeyCallback.Request"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="javax.security.auth.message.callback.PrivateKeyCallback.Request"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="util.DBManager"/>
-    <fullyQualifiedTypeName name="com.saeyan.dto.ProductVO"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
+    <fullyQualifiedTypeName name="com.dayeon.dto.MovieVO"/>
+    <fullyQualifiedTypeName name="com.dayeon.dao.MovieDAO"/>
 </qualifiedTypeNameHistroy>
