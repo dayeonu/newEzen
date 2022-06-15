@@ -27,16 +27,15 @@ public class MovieWriteServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
 		
 		request.setCharacterEncoding("utf-8");
 		
 		ServletContext context = getServletContext();
 		String path = context.getRealPath("upload");
-		String encType = "uft-8";
+		String encType = "utf-8";
 		int sizeLimit= 100* 1024 *1024;
 		
-		MultipartRequest multi = new MultipartRequest(request, path, sizeLimit, encType, new DefaultFileRenamePolicy());
+		MultipartRequest multi = new MultipartRequest(request, path, sizeLimit, encType, new DefaultFileRenamePolicy());//파일명 중복x
 		
 		String title= multi.getParameter("title");
 		int price = Integer.parseInt(multi.getParameter("price"));
@@ -54,8 +53,12 @@ public class MovieWriteServlet extends HttpServlet {
 		mVo.setPoster(poster);
 		
 		MovieDAO mDao = MovieDAO.getInstance();
-		mDao.insertMovie(mVo);
-		
-		response.sendRedirect("movieList.do");
+		int result = mDao.insertMovie(mVo);
+		if(result == 1) {
+			response.sendRedirect("movieList.do");
+		}else {
+			response.sendRedirect("movieWrite.do");
+			
+		}
 	}
 }

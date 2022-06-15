@@ -1,3 +1,4 @@
+ 
  1. 테이블 만들기 ( movie )
 	-- 영화 관리 프로그램 --
 	 create table movie(
@@ -34,9 +35,11 @@
   
   5. VO 클래스 (src/com/dayeon/dto)
   	-- MovieVO.java				-- 영화 정보를 저장하는 클래스
+
+  6. DAO 클래스
+  	-- MovieDAO.java				-- 데이터 베이스 테이블과 연동해서 작업하는 데이터베이스 처리클래스 
   
-  6. DAO 클래스 (src/com/dayeon/dao)
-  	-- MovieDAO.java			-- 데이터 베이스 테이블과 연동해서 작업하는 데이터베이스 처리클래스 
+  7. DAO 클래스 (src/com/dayeon/dao)
   	[리턴형]							[메소드]
   	MovieDAO getInstance()			MovieDAO객체를 리턴한다
   	List<MovieVO> selectALLMovies() 최근 등록한 영화정보를 먼저 출력한다

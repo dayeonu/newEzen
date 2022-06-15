@@ -15,7 +15,7 @@
 <%
 	DBManager.getConnetion();
 %>
-<jsp:forward page="movieList.do"/>
+<jsp:forward page="movieList.do"/>-
 
 </body>
 </html>

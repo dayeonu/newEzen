@@ -23,27 +23,29 @@ String sql="select * from movie";
 <body>
 	<div id="wrap" align="center">
 		<h1>리스트</h1>
-		<!-- 가운데 정렬이 안되고 있음 -->
 		<table class="list">
+			
 			<tr>
-				<td colspan="5" style="border: white;"><a
-					href="movieWrite.do">정보 등록</a></td>
+			
+				<td colspan="5" style="border: white; text-align: right">
+				<a href="movieWrite.do">영화 등록</a></td>
 			</tr>
-
+			
+			<tr>
 			<th>제목</th>
 			<th>감독</th>
 			<th>배우</th>
 			<th>가격</th>
 			<th>수정</th>
 			<th>삭제</th>
-			<tr>
+			</tr>
 
-				<c:forEach var="movie" items="${movieList}">
+				<c:forEach var="movieList" items="${movieList}">
 					<tr class="record">
-						<td>${movie.title}</td>
-						<td>${movie.director}</td>
-						<td>${movie.actor}</td>
-						<td>${movie.price} 원</td>
+						<td>${movieList.title}</td>
+						<td>${movieList.director}</td>
+						<td>${movieList.actor}</td>
+						<td>${movieList.price} 원</td>
 						<td><a href="movieUpdate.do?code=${movie.code}">정보 수정</a>
 						</td>
 						<td><a href="movieDelete.do?code=${movie.code}">정보 삭제</a>
