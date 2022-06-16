@@ -117,6 +117,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\First-GitTeol\On220615_01"/>
+			<item value="C:\Ezen01_teacher\web-study-11_board"/>
 			<item value="C:\Users\173\Desktop\web-study-10"/>
 			<item value="C:\newEzen\web-study-10"/>
 			<item value="C:\teacher\HRD_teacher"/>
@@ -157,6 +159,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Ezen01_teacher\web-study-11_board"/>
 			<item value="C:\works\BoardjspProject\src\main"/>
 			<item value="C:\Users\173\Downloads\Ezen01_teacher-master\BoardJspProject(sss)"/>
 			<item value="C:\Users\173\Downloads\home-master\web-study-07"/>
