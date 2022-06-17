@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.saeyan.dao.EmpDAO;
 import com.saeyan.dto.EmpVO;
 
-public class EmpListAction implements Action{
+public class EmpListFormAction implements Action{
 	
 	@Override
 	public void execute(HttpServletRequest reqeust, HttpServletResponse response) throws ServletException, IOException {
