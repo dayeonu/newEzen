@@ -35,7 +35,7 @@
 					<td>운영자</td>
 					</c:when>
 					<c:otherwise>
-					<td>일반회원</td>
+					<td>일반회원</td>  
 					</c:otherwise>
 					
 					</c:choose>
@@ -48,6 +48,7 @@
 					</c:otherwise>
 					</c:choose>
 					<td>${emplist.phone}</td>
+					
 				</tr>
 			</c:forEach>
 		</table>
