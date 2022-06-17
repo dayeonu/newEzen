@@ -16,7 +16,11 @@
 		<h1>리스트</h1>
 		<table class="list">
 			<tr>
+<<<<<<< HEAD
 				<td colspan="5" style="text-align: right"><a href="EmpServlet?command=emp_join_form"> 정보등록</a>
+=======
+				<td colspan="5" style="text-align: right"><a href="#"> 정보등록</a>
+>>>>>>> 78c19239a398eace0e126ddf60eaa68d21340d06
 				</td>
 			</tr>
 			<tr>
@@ -30,6 +34,7 @@
 				<tr class="recode">
 					<td>${emplist.id}</td>
 					<td><a href="EmpServlet?command=emp_view&id=${emplist.id}">${emplist.name}</a></td>
+<<<<<<< HEAD
 					<c:choose>
 					<c:when test="${emplist.lev == 'A' }"> 
 					<td>운영자</td>
@@ -53,5 +58,16 @@
 			</c:forEach>
 		</table>
 	</div>
+=======
+					<td>${emplist.lev}</td>
+					<td>${emplist.gender}</td>
+					<td>${emplist.phone}</td>
+				</tr>
+			</c:forEach>
+		</table>
+
+	</div>
+
+>>>>>>> 78c19239a398eace0e126ddf60eaa68d21340d06
 </body>
 </html>
