@@ -1243,3 +1243,7 @@
 6월 17, 2022 17:32:41.904 [7628:4988:0617/173241.904:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
 6월 17, 2022 17:35:03.284 [7628:4988:0617/173503.284:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
 6월 17, 2022 17:38:04.906 [7628:4988:0617/173804.906:ERROR:interface_endpoint_client.cc(665)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+6월 20, 2022 09:42:43.64 NEW SESSION
+6월 20, 2022 09:42:43.64 [10052:2860:0620/094243.063:ERROR:device_event_log_impl.cc(214)] [09:42:43.062] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 20, 2022 09:43:01.994 [7472:4272:0620/094301.994:ERROR:device_event_log_impl.cc(214)] [09:43:01.994] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
