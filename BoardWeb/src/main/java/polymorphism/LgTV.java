@@ -1,9 +1,16 @@
 package polymorphism;
 
 public class LgTV implements TV {
-	public LgTV() {
-	}
 
+	private Speaker speaker;
+	private int price;
+	public LgTV() {System.out.println("lgTV 생성자"); }
+	
+	public LgTV(Speaker speaker, int price) {
+		System.out.println("lgTV 생성자");
+		this.speaker = speaker;
+		this.price = price;
+	}
  public void powerOn() {
 	 System.out.println("LgTV ---전원 켠다");
  }
@@ -12,13 +19,10 @@ public class LgTV implements TV {
  }
  public void volumeUp() {
 	 System.out.println("LgTV ---소리 올린다");
+	 speaker.volumeUp();
  }
- public void volumDown() {
+ public void volumeDown() {
 		 System.out.println("LgTV ---소리 줄인다");
-	 }
-@Override
-public void volumeDown() {
-	// TODO Auto-generated method stub
-	
-}
+		 speaker.volumeDown();
+ }
 }

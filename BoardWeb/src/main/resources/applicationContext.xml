@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="tv" class="polymorphism.jinaTV" />
-</beans>
+	<bean id="samsung" class="polymorphism.SamsungTV" p:speaker-ref="sony" p:price="2700000" />
+	
+<!-- 	<constructor-arg ref="sony"></constructor-arg>  -->
+	<!-- 생성자호출 : ref에 있는 이름인 다른 빈 객체를 ref가 쓰인 객체에
+	불러와서 사용하겠다는 뜻 . 객체를 주입하겠다는 뜻 -->
+	
+<!-- 	<constructor-arg value="500" type="double" ></constructor-arg>
+ --><!-- 	value 는 단순 값을 넣을 떄사용 -->
+	
+	<bean id="sony" class="polymorphism.SonySpeaker" />
+	<bean id="apple" class="polymorphism.AppleSpeaker" />
+	
+<!-- 	<bean id="lg" class="polymorphism.LgTV" >
+	<constructor-arg ref="apple"></constructor-arg>
+	<constructor-arg value="500" type="int"></constructor-arg>
+	</bean> -->
+	
+	<bean id ="CollectionBean" class="com.springbook.ioc.injection.CollectionBean">
+	 <property name="addressProperties">
+	 <props>
+		<prop key="고길동">서울시 강남구 역삼동</prop>	
+		<prop key="마이콜">서울시 강서구 둔촌동</prop>	
+	</props>
+	</property>
+	</bean>	
+	</beans>

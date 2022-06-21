@@ -8,11 +8,12 @@ public class TVUser {
 		
 	AbstractApplicationContext factory = new GenericXmlApplicationContext("applicationContext.xml");
 		
-	TV tv = (TV)factory.getBean("tv");
-	tv.powerOn();
-	tv.volumeUp();
-	tv.volumeDown();;
+	TV tv =(TV)factory.getBean("samsung"); // 불러올 데이타의 형태를모르니까 타입변환 (TV)로 함
+
+	tv.powerOn(); 
 	tv.powerOff();
+	tv.volumeUp();
+	tv.volumeDown();
 	
 	factory.close();
 	
