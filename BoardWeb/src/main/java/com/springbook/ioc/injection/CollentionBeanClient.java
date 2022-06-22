@@ -13,10 +13,11 @@ public class CollentionBeanClient {
 		
 		CollectionBean bean= (CollectionBean)factory.getBean("CollectionBean");
 		 
+		System.out.println("===================Properties");
 		Properties pro = bean.getAddressProperties();
-		for(String key: pro.get()) {
-			System.out.println(key);
+		for(String key: pro.stringPropertyNames()) {
+			System.out.println(key + ":" + pro.get(key));
 		}
-		factory.close();
 	}
-}
+//		factory.close();
+	}

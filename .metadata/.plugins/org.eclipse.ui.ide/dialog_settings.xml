@@ -117,6 +117,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\173\Documents\카카오톡 받은 파일\BoardWeb"/>
 			<item value="C:\First-GitTeol\On220615_01"/>
 			<item value="C:\Ezen01_teacher\web-study-11_board"/>
 			<item value="C:\Users\173\Desktop\web-study-10"/>
@@ -132,21 +133,9 @@
 	<section name="NewWizardAction">
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.ui.Basic"/>
-			<item value="org.eclipse.ajdt.wizards"/>
-			<item value="org.eclipse.ajdt.wizards/org.eclipse.ajdt.examples"/>
-			<item value="org.eclipse.ajdt.wizards/org.eclipse.ajdt.pluginExamples"/>
 			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
-			<item value="org.eclipse.jst.ejb.ui"/>
-			<item value="org.eclipse.buildship.ui.creationwizards"/>
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jst.j2ee.internal"/>
-			<item value="org.eclipse.m2e"/>
-			<item value="org.eclipse.pde.PDE"/>
-			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
-			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
-			<item value="org.eclipse.wst.web.ui"/>
-			<item value="org.eclipse.ui.Examples"/>
 		</list>
 	</section>
 	<section name="CleanDialogSettings">
