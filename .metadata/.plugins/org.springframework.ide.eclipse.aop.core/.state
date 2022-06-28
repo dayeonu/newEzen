@@ -9,6 +9,8 @@
 <aop-reference advice-type="BEFORE" bean="1:BeansModel|2:BoardWeb|3:src/main/resources/applicationContext.xml|7:beans:9|8:boardService:9" bean-file="/BoardWeb/src/main/resources/applicationContext.xml" bean-start-line="9" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/BoardWeb/src/main/resources/applicationContext.xml" source="=BoardWeb/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springbook.biz.common{Log4jAdvice.java[Log4jAdvice~printLogging" source-start-line="5" target="=BoardWeb/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springbook.biz.board.Impl{BoardServiceImpl.java[BoardServiceImpl~getBoard~QBoardVO;" target-start-line="35"/>
 </aspect-definition>
 </aop-project>
+<aop-project name="BoardWeb_Home"/>
 <aop-project name="MyBatisTest"/>
+<aop-project name="BoardWeb.zip_expanded"/>
 <aop-project name="MybatisTest2"/>
 </aop-reference-model>

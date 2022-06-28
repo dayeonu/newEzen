@@ -150,6 +150,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\works\0_home_git\BoardWeb.zip_expanded"/>
+			<item value="C:\works\0_home_git\BoardWeb_Home"/>
 			<item value="C:\Ezen01_teacher\web-study-11_board"/>
 			<item value="C:\works\BoardjspProject\src\main"/>
 			<item value="C:\Users\173\Downloads\Ezen01_teacher-master\BoardJspProject(sss)"/>
