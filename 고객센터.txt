@@ -1,0 +1,26 @@
+--고객센터
+create table center(
+    ce_num number primary key,
+    ce_pass varchar(40),
+    ce_nickname varchar2(20),
+    ce_title varchar2(100),
+    ce_content varchar2(2000),
+    ce_id varchar2(30),
+	constraint fk_board_id foreign key (ce_id) references marketuser (us_id)
+    on delete cascade
+);
+
+1. 공지사항
+=> 게시판 형태(글쓰기, 수정, 삭제)? 
+
+2. 자주묻는 질문 
+=> 검색어로 질문검색 기능
+=> 질문별 카테고리 표현
+=> 자주 묻는 질문 나래비
+
+3. Q&A
+=> 그래도 해결이 안되시나요? 
+=> 고객센터에 문의하기(카테고리 세분화 -> 선택 -> 기재된 답변
+=> 고객센터에 문의하기(카테고리 세분화 -> 선택 -> 여기에 내용을 적어주세요 (사진 첨부) => 문의하기
+
+ 
