@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="OEMarket"/>
 <aop-project name="BoardWeb_Home"/>
 <aop-project name="ex02"/>
+<aop-project name="OEMarketProject"/>
 <aop-project name="BoardWeb.zip_expanded"/>
 <aop-project name="MyBatisTest"/>
 <aop-project name="MybatisTest2"/>
+<aop-project name="OEMarket2"/>
 </aop-reference-model>
